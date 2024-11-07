@@ -1,0 +1,28 @@
+:root {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1615414047026-802692414b79?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTAyMTAxMTR8&ixlib=rb-4.0.3&q=85);
+  background-position: center center;
+  background-size: cover;
+}
+
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0,0%,0%, 0.95);
+  mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 40px,
+    black 300px
+  );
+  -webkit-mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 90px,
+    black 150px
+  );
+}
